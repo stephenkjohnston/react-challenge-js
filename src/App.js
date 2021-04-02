@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MoviesSection from "components/shared/MoviesSection/MoviesSection";
 import "./styles.css";
 
@@ -14,29 +14,27 @@ import "./styles.css";
  */
 
 export default function App() {
-  // Have state for all movies ([])
-  // Have state for all movies in the watch list ([])
+  // Have a way to store all movies
+  // Have a way to store all movies in the watch list
 
-  // Fetch the movies from http://location:3000/api/v1/movies.
+  // Fetch the movies from https://swapi.dev/api/films/.
 
   // Help customers add movies to their watch list
   // Help customers remove movies from their watch list
-
+  
   return (
     <>
       <MoviesSection
         title="Movies"
         movies={[]}
-        watchList={[]}
-        noMoviesLabel="Loading awesome movies to feed your watchlist..."
-        onWatchListButtonClicked={(movie) => console.log({ movie })} 
+        noMoviesLabel="🎥🎥 Where are the original movies?"
+        onClickMovie={(movie) => console.log({ movie })} 
       />
       <MoviesSection
         title="Watchlist"
         movies={[]}
-        watchList={[]}
-        noMoviesLabel="Your watchlist is feeling lonely."
-        onWatchListButtonClicked={(movie) => console.log({ movie })} 
+        noMoviesLabel="🍿🍿 How will you binge with nothing to binge?"
+        onClickMovie={(movie) => console.log({ movie })} 
       />
     </>
   );

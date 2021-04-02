@@ -2,21 +2,15 @@ import React, { useCallback, useEffect, useState } from 'react';
 import isMovieInTheWatchlist from 'utils/isMovieInWatchlist';
 import styles from './Movie.module.css';
 
-export default function Movie({ movie = [], watchList = [], onWatchListButtonClicked }) {
-    const [isInWatchList, setIsInWatchList] = useState(false);
+export default function Movie({ movie = [], onClickMovie }) {
 
-    const onClickWatchListButton = useCallback(() => {
-        if (typeof onWatchListButtonClicked === 'function') {
-            onWatchListButtonClicked(movie);
+    const onMovieClicked = useCallback(() => {
+        if (typeof onClickMovie === 'function') {
+            onClickMovie(movie);
         }
     },[movie]);
 
-    useEffect(() => {
-        if (isMovieInTheWatchlist(movie, watchList)) {
-            setIsInWatchList(true);
-        }
-    },[movie, watchList])
-
+    const isInWatchList = false;
     return (
         <div className={styles.movie}>
             <img className={styles.moviePoster} src={`/images/starwars_episode_0${movie.episode_id}.jpg`} />

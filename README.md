@@ -5,6 +5,7 @@ This challenge is part of the hiring process at PNNL. The idea is to make as muc
 **(optional)** If time permits within the 24 hour time frame show us what you got by "improving" this application. This is an optional step and will NOT affect the hiring process.
 
 ## What you're building
+![No Movies](public/images/no_movies_screen.png)
 
 ![Wireframe](public/images/tehnical_challenge_final_product.gif)
 
@@ -21,17 +22,7 @@ You're a developer building the latest and greatest movie watching app. Arriving
 
 # 👨‍💻 Technical Notes
 ## Fetch Data
-Fetch the movies from the endpoint `/api/v1/movies`. This endpoint returns an array of movies the resembles:
-   ```
-   [
-        {
-            title: 'The Phantom Menace',
-            description: 'Jedi Knights Obi-Wan Kenobi and Qui-Gon Jinn rescue Queen Amidala, ruler of a peaceful planet invaded by dark forces. During their escape, they discover nine-year-old Anakin Skywalker, a child prodigy who is unusually strong in the Force.',
-            episode_id: 1,
-            release_year: "1999"
-        },
-   ]
-   ```
+Fetch the movies from the endpoint `[/api/v1/movies`](https://swapi.dev/api/films/). This endpoint returns an array of movies.
 **NOTE** the components are already setup to parse the properties. All you have to do is provide it with the data.
 
 ## Watchlist
