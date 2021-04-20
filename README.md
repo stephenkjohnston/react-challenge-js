@@ -22,7 +22,7 @@ You're a developer building the latest and greatest movie watching app. Arriving
 
 # 👨‍💻 Technical Notes
 ## Fetch Data
-Fetch the movies from the endpoint `[/api/v1/movies`](https://swapi.dev/api/films/). This endpoint returns an array of movies.
+Fetch the movies from the endpoint [https://swapi.dev/api/films/](https://swapi.dev/api/films/). This endpoint returns an array of movies.
 **NOTE** the components are already setup to parse the properties. All you have to do is provide it with the data.
 
 ## Watchlist
